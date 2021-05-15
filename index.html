@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz App</title>
+    <meta name="description" content="">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="content">
+        <header class="header">
+            <span id="logo1">LOGO-1</span>
+            <span id="logo2">LOGO-2</span>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " id=" nav-style ">
+            <div class="container-fluid ">
+                <div class="navbar-brand ">Questions</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="navbar-nav">
+                        <button class="nav-item li-style">
+                            <span class="  quesnos" id="0">1</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="1">2</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="2">3</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="3">4</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="4">5</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="5">6</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="7">7</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="8">8</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="9">9</span>
+                        </button>
+                        <button class="nav-item li-style">
+                            <span class="quesnos" id="10">10</span>
+                        </button>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+        <div id="start">
+            <div>Time left:
+                <span id="time">00:00</span>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary" id="startbutton">Start</button>
+            </div>
+        </div>
+        <div id="quiz">
+            <div class="container">
+                <h3 id="question">Q: Your question will come here!!</h3>
+                <label id="a1" class="answers">
+                    <input type="radio" name="radio" class="options" id="a">
+                    <span id="optionA"> Option A</span>
+
+                </label>
+                <label id="a2" class="answers">
+                    <input type="radio" class="options" name="radio" id="b">
+                    <span id="optionB">Option B</span>
+
+                </label>
+                <label id="a3" class="answers">
+                    <input type="radio" class="options" name="radio" id="c">
+                    <span id="optionC">Option C</span>
+
+                </label>
+                <label id="a4" class="answers">
+                    <input type="radio" id="d" class="options" name="radio">
+                    <span id="optionD">Option D</span>
+
+                </label>
+            </div>
+            <div id="checkbox"><label>
+                    <input type="checkbox">
+                    Mark for review
+                </label>
+                <button class="btn btn-danger " id="clear-response">Clear Response</button>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div>
+                <button class="btn btn-warning" id="previous">Previous</button>
+                <button class="btn btn-warning" id="next">Next</button>
+            </div>
+
+            <button type="submit" class="btn btn-success" id="submit">Submit</button>
+        </footer>
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
