@@ -13,66 +13,73 @@ body {
 .footer {
   background-color: #ed254e;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   bottom: 0;
   width: 100vw;
   padding: 1rem;
+  margin-top: 2rem;
+  left: 0rem;
 }
 .footer div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 40vw;
 }
 
 .li-style {
   background-color: #465362;
-  width:2rem;
+  width: 2rem;
   text-align: center;
   margin: 4px;
   border-radius: 52px;
-
 }
 
-.answers{
+.answers {
   display: block;
   margin: 1rem;
   cursor: pointer;
 }
 
-.container{
+.container {
   margin-top: 1.5rem;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 #465362;
   transition: 0.2s;
+  overflow: scroll;
+  height: 22rem;
 }
 
-#checkbox{
-  margin:0.25rem;
+#checkbox {
+  margin: 0.25rem;
   font-size: 1.12rem;
   display: none;
   padding: 2rem;
   justify-content: space-between;
 }
-.quesnos{
-  color: white !important;
+.quesnos {
+  color: black !important;
 }
 
-#start{
+
+#quiz {
+  padding-bottom: 5rem;
+}
+
+#start {
   display: flex;
   justify-content: space-between;
-  margin:1rem;
+  margin: 1rem;
   font-weight: bold;
   font-size: 1.12rem;
 }
-.finished{
- font-size: 2.5rem;
- font-weight: bold;
- text-align: center;
-
+.finished {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-.submitted{
+.submitted {
   width: 100vw;
   height: 100vh;
   background-color: #465362;
